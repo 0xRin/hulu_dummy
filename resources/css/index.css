@@ -118,6 +118,52 @@ h4 {
     margin: 25px 0px;
 }
 
+/* Sub Header */
+.sub-content {
+    display: grid;
+    grid-template-rows: 1fr;
+    grid-template-columns: 1fr 3fr;
+    align-items: center;
+    gap: 30px;
+    padding: 30px;
+    background: linear-gradient(to right, #CACF85,#8CBA80,#658E9C,#4D5382,#514663 );
+    transition: background 1s ease-out;
+}
+
+
+/* Doesn't work */
+.sub-content:hover {
+    background: linear-gradient(to right, #82D4BB,#82C09A,#82AC9F,#829298,#94778B);
+}
+.sub-content img {
+    width: 100%;
+}
+
+.sub-content .flex-container {
+   display: flex;
+   justify-content: space-between;
+   align-items: center;
+}
+
+.sub-content .header-container .header-text-1{
+    font-size: 30px;
+    font-weight: 300;
+}
+
+.sub-content a {
+    text-decoration: underline;
+    color: hsla(0, 0%, 80%, 0.5);
+}
+
+.sub-content .button-container {
+    text-align: center;
+}
+
+.sub-content .button-container .btn {
+    display: block;
+    margin: 5px;
+}
+
 
 /* Media Queries */
 @media(max-width: 768px){
