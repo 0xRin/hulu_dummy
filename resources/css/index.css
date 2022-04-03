@@ -126,17 +126,12 @@ h4 {
     align-items: center;
     gap: 30px;
     padding: 30px;
-    background: linear-gradient(to right, #CACF85,#8CBA80,#658E9C,#4D5382,#514663 );
-    transition: background 1s ease-out;
+    background: linear-gradient(to right, #CACF85,#8CBA80,#658E9C,#4D5382 );
 }
 
-
-/* Doesn't work */
-.sub-content:hover {
-    background: linear-gradient(to right, #82D4BB,#82C09A,#82AC9F,#829298,#94778B);
-}
 .sub-content img {
     width: 100%;
+    margin: auto;
 }
 
 .sub-content .flex-container {
@@ -152,7 +147,7 @@ h4 {
 
 .sub-content a {
     text-decoration: underline;
-    color: hsla(0, 0%, 80%, 0.5);
+    color: hsla(0, 5%, 96%, 0.5);
 }
 
 .sub-content .button-container {
@@ -162,8 +157,15 @@ h4 {
 .sub-content .button-container .btn {
     display: block;
     margin: 5px;
+    background: none;
+    color: white;
+    border: 2px solid white;
+    transition: border-color 0.3s ease-out;
 }
 
+.sub-content .btn:hover {
+    border-color: #ccc;
+}
 
 /* Media Queries */
 @media(max-width: 768px){
@@ -175,5 +177,29 @@ h4 {
     .header .content {
         padding: 0 20px;
         
+    }
+
+    .header .header-text-1{
+        margin-bottom: 20px;
+    }
+
+    .header .header-text-2 {
+        display: none;
+    }
+
+    .sub-content {
+        grid-template-columns: 1fr;
+        gap: 15px;
+        background: linear-gradient(to bottom, #CACF85,#8CBA80,#658E9C,#4D5382 );
+    }
+
+    .sub-content img {
+        width: 90%;
+    }
+
+    .sub-content .flex-container {
+        text-align: center;
+        justify-content: center;
+        flex-wrap: wrap;
     }
 }
